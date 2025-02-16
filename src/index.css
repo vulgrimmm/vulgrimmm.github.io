@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+@layer base {
+  body {
+    @apply text-gray-900 antialiased;
+  }
+}
+
+/* RTL Support */
+[dir="rtl"] {
+  .rtl-flip {
+    @apply scale-x-[-1];
+  }
+  
+  .text-left {
+    text-align: right;
+  }
+  
+  .text-right {
+    text-align: left;
+  }
+}
